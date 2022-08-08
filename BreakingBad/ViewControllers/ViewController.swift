@@ -9,13 +9,13 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    let newsUrl = "https://www.breakingbadapi.com/api/characters"
+   private let charactersUrl = "https://www.breakingbadapi.com/api/characters"
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        guard let url = URL(string: newsUrl) else { return }
+        guard let url = URL(string: charactersUrl) else { return }
         URLSession.shared.dataTask(with: url) { data, _, error in
             guard let data = data else {
                 print(error?.localizedDescription ?? "Not error description")
@@ -28,6 +28,7 @@ class ViewController: UIViewController {
                 print(error)
             }
         }.resume()
+        
         
     }
 }
