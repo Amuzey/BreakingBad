@@ -13,6 +13,7 @@
 		8A1F010A28A110DC00F94B04 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A1F010828A110DC00F94B04 /* Main.storyboard */; };
 		8A1F010C28A110DF00F94B04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A1F010B28A110DF00F94B04 /* Assets.xcassets */; };
 		8A1F010F28A110DF00F94B04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A1F010D28A110DF00F94B04 /* LaunchScreen.storyboard */; };
+		8A1F011728A110F900F94B04 /* Characters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1F011628A110F900F94B04 /* Characters.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		8A1F010B28A110DF00F94B04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A1F010E28A110DF00F94B04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8A1F011028A110DF00F94B04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A1F011628A110F900F94B04 /* Characters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Characters.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,56 @@
 		8A1F010128A110DC00F94B04 /* BreakingBad */ = {
 			isa = PBXGroup;
 			children = (
-				8A1F010228A110DC00F94B04 /* AppDelegate.swift */,
-				8A1F010428A110DC00F94B04 /* SceneDelegate.swift */,
-				8A1F010628A110DC00F94B04 /* ViewController.swift */,
-				8A1F010828A110DC00F94B04 /* Main.storyboard */,
-				8A1F010B28A110DF00F94B04 /* Assets.xcassets */,
-				8A1F010D28A110DF00F94B04 /* LaunchScreen.storyboard */,
-				8A1F011028A110DF00F94B04 /* Info.plist */,
+				8A1F011A28A1127900F94B04 /* ViewControllers */,
+				8A1F011928A1127200F94B04 /* Models */,
+				8A1F011828A1126300F94B04 /* StoryBoards */,
+				8A1F011B28A1128B00F94B04 /* App */,
+				8A1F011C28A112B600F94B04 /* Resources */,
 			);
 			path = BreakingBad;
+			sourceTree = "<group>";
+		};
+		8A1F011828A1126300F94B04 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				8A1F010828A110DC00F94B04 /* Main.storyboard */,
+				8A1F010D28A110DF00F94B04 /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		8A1F011928A1127200F94B04 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8A1F011628A110F900F94B04 /* Characters.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8A1F011A28A1127900F94B04 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8A1F010628A110DC00F94B04 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		8A1F011B28A1128B00F94B04 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				8A1F010228A110DC00F94B04 /* AppDelegate.swift */,
+				8A1F010428A110DC00F94B04 /* SceneDelegate.swift */,
+				8A1F011028A110DF00F94B04 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		8A1F011C28A112B600F94B04 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8A1F010B28A110DF00F94B04 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +184,7 @@
 				8A1F010728A110DC00F94B04 /* ViewController.swift in Sources */,
 				8A1F010328A110DC00F94B04 /* AppDelegate.swift in Sources */,
 				8A1F010528A110DC00F94B04 /* SceneDelegate.swift in Sources */,
+				8A1F011728A110F900F94B04 /* Characters.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,7 +333,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5Z3HCFMYW5;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = BreakingBad/Info.plist;
+				INFOPLIST_FILE = BreakingBad/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -317,7 +361,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5Z3HCFMYW5;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = BreakingBad/Info.plist;
+				INFOPLIST_FILE = BreakingBad/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
