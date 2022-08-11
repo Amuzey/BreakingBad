@@ -14,6 +14,9 @@
 		8A1F010C28A110DF00F94B04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A1F010B28A110DF00F94B04 /* Assets.xcassets */; };
 		8A1F010F28A110DF00F94B04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A1F010D28A110DF00F94B04 /* LaunchScreen.storyboard */; };
 		8A1F011728A110F900F94B04 /* Characters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1F011628A110F900F94B04 /* Characters.swift */; };
+		8A1F016A28A4DD9000F94B04 /* СharactersCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1F016928A4DD9000F94B04 /* СharactersCollectionViewController.swift */; };
+		8A1F016C28A4DDBF00F94B04 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1F016B28A4DDBE00F94B04 /* NetworkManager.swift */; };
+		8A1F016F28A4DE1300F94B04 /* CharacterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1F016E28A4DE1300F94B04 /* CharacterCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		8A1F010E28A110DF00F94B04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8A1F011028A110DF00F94B04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A1F011628A110F900F94B04 /* Characters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Characters.swift; sourceTree = "<group>"; };
+		8A1F016928A4DD9000F94B04 /* СharactersCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "СharactersCollectionViewController.swift"; sourceTree = "<group>"; };
+		8A1F016B28A4DDBE00F94B04 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		8A1F016E28A4DE1300F94B04 /* CharacterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +64,13 @@
 		8A1F010128A110DC00F94B04 /* BreakingBad */ = {
 			isa = PBXGroup;
 			children = (
+				8A1F017028A4DE1A00F94B04 /* Views */,
 				8A1F011A28A1127900F94B04 /* ViewControllers */,
 				8A1F011928A1127200F94B04 /* Models */,
+				8A1F016D28A4DDC200F94B04 /* Services */,
 				8A1F011828A1126300F94B04 /* StoryBoards */,
-				8A1F011B28A1128B00F94B04 /* App */,
 				8A1F011C28A112B600F94B04 /* Resources */,
+				8A1F011B28A1128B00F94B04 /* App */,
 			);
 			path = BreakingBad;
 			sourceTree = "<group>";
@@ -88,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				8A1F010628A110DC00F94B04 /* ViewController.swift */,
+				8A1F016928A4DD9000F94B04 /* СharactersCollectionViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -108,6 +117,22 @@
 				8A1F010B28A110DF00F94B04 /* Assets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		8A1F016D28A4DDC200F94B04 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8A1F016B28A4DDBE00F94B04 /* NetworkManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		8A1F017028A4DE1A00F94B04 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8A1F016E28A4DE1300F94B04 /* CharacterCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,8 +206,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A1F016C28A4DDBF00F94B04 /* NetworkManager.swift in Sources */,
 				8A1F010728A110DC00F94B04 /* ViewController.swift in Sources */,
 				8A1F010328A110DC00F94B04 /* AppDelegate.swift in Sources */,
+				8A1F016F28A4DE1300F94B04 /* CharacterCell.swift in Sources */,
+				8A1F016A28A4DD9000F94B04 /* СharactersCollectionViewController.swift in Sources */,
 				8A1F010528A110DC00F94B04 /* SceneDelegate.swift in Sources */,
 				8A1F011728A110F900F94B04 /* Characters.swift in Sources */,
 			);
