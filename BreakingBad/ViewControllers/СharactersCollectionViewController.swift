@@ -15,7 +15,6 @@ class CharactersCollectionViewController: UICollectionViewController {
         super.viewDidLoad()
         fetchCharacter()
     }
-
     /*
     // MARK: - Navigation
 
