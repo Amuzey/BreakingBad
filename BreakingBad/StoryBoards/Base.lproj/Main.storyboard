@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HAL-0c-cSU">
-    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -8,12 +8,12 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Collection View Controller-->
+        <!--Characters Collection View Controller-->
         <scene sceneID="HgO-dD-8bz">
             <objects>
-                <collectionViewController id="Tx6-qD-S8N" sceneMemberID="viewController">
+                <collectionViewController id="Tx6-qD-S8N" customClass="CharactersCollectionViewController" customModule="BreakingBad" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="TQl-SC-Nim">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="YB9-hF-ik2">
@@ -23,13 +23,39 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="character" id="PyU-dg-Qon">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="character" id="PyU-dg-Qon" customClass="CharacterCell" customModule="BreakingBad" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="wlC-86-JAh">
                                     <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DkW-H1-Xrz">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Xg-1P-QGB">
+                                            <rect key="frame" x="4" y="51" width="120" height="26.5"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="120" id="Qdi-7J-sob"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="22"/>
+                                            <color key="textColor" red="0.99607843159999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="2Xg-1P-QGB" firstAttribute="centerY" secondItem="wlC-86-JAh" secondAttribute="centerY" id="4QJ-Sl-d2w"/>
+                                        <constraint firstAttribute="bottom" secondItem="DkW-H1-Xrz" secondAttribute="bottom" id="6kZ-Nw-vkh"/>
+                                        <constraint firstItem="DkW-H1-Xrz" firstAttribute="leading" secondItem="wlC-86-JAh" secondAttribute="leading" id="JTc-Id-iS5"/>
+                                        <constraint firstItem="2Xg-1P-QGB" firstAttribute="centerX" secondItem="wlC-86-JAh" secondAttribute="centerX" id="Ts1-EN-VT6"/>
+                                        <constraint firstAttribute="trailing" secondItem="DkW-H1-Xrz" secondAttribute="trailing" id="gv6-0y-8dd"/>
+                                        <constraint firstItem="DkW-H1-Xrz" firstAttribute="top" secondItem="wlC-86-JAh" secondAttribute="top" id="kTi-SK-J8L"/>
+                                    </constraints>
                                 </collectionViewCellContentView>
+                                <connections>
+                                    <outlet property="nameLabel" destination="2Xg-1P-QGB" id="9Pa-VD-a4b"/>
+                                    <outlet property="photoImageView" destination="DkW-H1-Xrz" id="j2v-dB-X2P"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
@@ -49,7 +75,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="HAL-0c-cSU" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="16E-AV-xBd">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
