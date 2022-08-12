@@ -19,7 +19,10 @@ class CharactersCollectionViewController: UICollectionViewController {
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let characterVC = segue.destination as? CharacterViewController else { return }
-        characterVC.fetchCharacter()
+        guard let indexPaths = collectionView.indexPathsForSelectedItems else { return }
+        guard let indexPath = indexPaths.first else { return }
+        
+        characterVC.character = characters[indexPath.item]
     }
   
 
