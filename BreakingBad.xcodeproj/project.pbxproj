@@ -16,6 +16,7 @@
 		8A1F016A28A4DD9000F94B04 /* СharactersCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1F016928A4DD9000F94B04 /* СharactersCollectionViewController.swift */; };
 		8A1F016C28A4DDBF00F94B04 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1F016B28A4DDBE00F94B04 /* NetworkManager.swift */; };
 		8A1F016F28A4DE1300F94B04 /* CharacterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1F016E28A4DE1300F94B04 /* CharacterCell.swift */; };
+		8A43A70428A64784005E099D /* CharacterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A43A70328A64784005E099D /* CharacterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		8A1F016928A4DD9000F94B04 /* СharactersCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "СharactersCollectionViewController.swift"; sourceTree = "<group>"; };
 		8A1F016B28A4DDBE00F94B04 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		8A1F016E28A4DE1300F94B04 /* CharacterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCell.swift; sourceTree = "<group>"; };
+		8A43A70328A64784005E099D /* CharacterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				8A1F016928A4DD9000F94B04 /* СharactersCollectionViewController.swift */,
+				8A43A70328A64784005E099D /* CharacterViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -205,6 +208,7 @@
 			files = (
 				8A1F016C28A4DDBF00F94B04 /* NetworkManager.swift in Sources */,
 				8A1F010328A110DC00F94B04 /* AppDelegate.swift in Sources */,
+				8A43A70428A64784005E099D /* CharacterViewController.swift in Sources */,
 				8A1F016F28A4DE1300F94B04 /* CharacterCell.swift in Sources */,
 				8A1F016A28A4DD9000F94B04 /* СharactersCollectionViewController.swift in Sources */,
 				8A1F010528A110DC00F94B04 /* SceneDelegate.swift in Sources */,

@@ -15,15 +15,13 @@ class CharactersCollectionViewController: UICollectionViewController {
         super.viewDidLoad()
         fetchCharacter()
     }
-    /*
+    
     // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using [segue destinationViewController].
-        // Pass the selected object to the new view controller.
+        guard let characterVC = segue.destination as? CharacterViewController else { return }
+        characterVC.fetchCharacter()
     }
-    */
+  
 
     // MARK: UICollectionViewDataSource
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -50,8 +48,6 @@ class CharactersCollectionViewController: UICollectionViewController {
         }
     }
 }
-
-
 
 extension CharactersCollectionViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
