@@ -35,8 +35,6 @@ class CharacterViewController: UIViewController {
                 print(error)
             }
         }
-        
-        
     }
 }
 

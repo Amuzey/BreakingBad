@@ -21,7 +21,6 @@ class CharactersCollectionViewController: UICollectionViewController {
         guard let characterVC = segue.destination as? CharacterViewController else { return }
         guard let indexPaths = collectionView.indexPathsForSelectedItems else { return }
         guard let indexPath = indexPaths.first else { return }
-        
         characterVC.character = characters[indexPath.item]
     }
   
