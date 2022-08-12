@@ -80,9 +80,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="G47-nF-Ys3">
-                                <rect key="frame" x="40" y="44" width="240" height="336"/>
+                                <rect key="frame" x="0.0" y="44" width="320" height="329"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="336" id="KJO-aC-MwS"/>
+                                    <constraint firstAttribute="height" constant="329" id="Gce-3w-ZXk"/>
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="JzJ-wp-KuS">
@@ -118,12 +118,12 @@
                         <viewLayoutGuide key="safeArea" id="g4f-6U-oyJ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="G47-nF-Ys3" firstAttribute="top" secondItem="g4f-6U-oyJ" secondAttribute="top" id="Glo-ru-8iS"/>
+                            <constraint firstItem="G47-nF-Ys3" firstAttribute="leading" secondItem="g4f-6U-oyJ" secondAttribute="leading" id="0v8-Bl-go9"/>
+                            <constraint firstItem="G47-nF-Ys3" firstAttribute="top" secondItem="g4f-6U-oyJ" secondAttribute="top" id="H5l-83-Heq"/>
                             <constraint firstItem="g4f-6U-oyJ" firstAttribute="bottom" secondItem="JzJ-wp-KuS" secondAttribute="bottom" constant="20" id="JSD-VI-FK3"/>
+                            <constraint firstItem="G47-nF-Ys3" firstAttribute="trailing" secondItem="g4f-6U-oyJ" secondAttribute="trailing" id="Q2q-Dk-6hK"/>
                             <constraint firstItem="JzJ-wp-KuS" firstAttribute="leading" secondItem="g4f-6U-oyJ" secondAttribute="leading" constant="16" id="a4g-BE-h8m"/>
-                            <constraint firstItem="G47-nF-Ys3" firstAttribute="leading" secondItem="g4f-6U-oyJ" secondAttribute="leading" constant="40" id="aEd-Ws-3WI"/>
                             <constraint firstItem="g4f-6U-oyJ" firstAttribute="trailing" secondItem="JzJ-wp-KuS" secondAttribute="trailing" constant="16" id="yei-KA-1hI"/>
-                            <constraint firstItem="g4f-6U-oyJ" firstAttribute="trailing" secondItem="G47-nF-Ys3" secondAttribute="trailing" constant="40" id="zZT-Xr-kBG"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="FmT-OQ-Hwd"/>
