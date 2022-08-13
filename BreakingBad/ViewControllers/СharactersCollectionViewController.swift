@@ -31,7 +31,12 @@ class CharactersCollectionViewController: UICollectionViewController {
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "character", for: indexPath) as? CharacterCell else { return UICollectionViewCell() }
+        guard let cell = collectionView.dequeueReusableCell(
+            withReuseIdentifier: "character",
+            for: indexPath
+        ) as? CharacterCell else {
+            return UICollectionViewCell()
+        }
         let character = characters[indexPath.item]
         cell.configure(with: character)
         cell.layer.cornerRadius = 10
