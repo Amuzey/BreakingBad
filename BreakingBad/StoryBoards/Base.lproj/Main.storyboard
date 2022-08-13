@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Characters Collection View Controller-->
+        <!--Breaking Bad Characters-->
         <scene sceneID="HgO-dD-8bz">
             <objects>
                 <collectionViewController id="Tx6-qD-S8N" customClass="CharactersCollectionViewController" customModule="BreakingBad" customModuleProvider="target" sceneMemberID="viewController">
@@ -73,7 +73,7 @@
                             <outlet property="delegate" destination="Tx6-qD-S8N" id="Njg-2b-qyq"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" id="Utp-yO-VBg"/>
+                    <navigationItem key="navigationItem" title="Breaking Bad Characters" id="Utp-yO-VBg"/>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YSQ-8E-2Nj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
