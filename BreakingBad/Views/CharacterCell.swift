@@ -13,6 +13,7 @@ class CharacterCell: UICollectionViewCell {
     @IBOutlet var nameLabel: UILabel!
     
     
+    
     func configure(with character: Character) {
         
         nameLabel.text = character.name

@@ -34,6 +34,10 @@
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DkW-H1-Xrz">
                                             <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                         </imageView>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vTa-Ra-e1v">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Xg-1P-QGB">
                                             <rect key="frame" x="4" y="51.000000000000007" width="120" height="26.333333333333336"/>
                                             <constraints>
@@ -47,10 +51,14 @@
                                     <constraints>
                                         <constraint firstItem="2Xg-1P-QGB" firstAttribute="centerY" secondItem="wlC-86-JAh" secondAttribute="centerY" id="4QJ-Sl-d2w"/>
                                         <constraint firstAttribute="bottom" secondItem="DkW-H1-Xrz" secondAttribute="bottom" id="6kZ-Nw-vkh"/>
+                                        <constraint firstAttribute="trailing" secondItem="vTa-Ra-e1v" secondAttribute="trailing" id="Azs-V7-uHk"/>
                                         <constraint firstItem="DkW-H1-Xrz" firstAttribute="leading" secondItem="wlC-86-JAh" secondAttribute="leading" id="JTc-Id-iS5"/>
+                                        <constraint firstItem="vTa-Ra-e1v" firstAttribute="leading" secondItem="wlC-86-JAh" secondAttribute="leading" id="TZg-dx-wJs"/>
                                         <constraint firstItem="2Xg-1P-QGB" firstAttribute="centerX" secondItem="wlC-86-JAh" secondAttribute="centerX" id="Ts1-EN-VT6"/>
+                                        <constraint firstItem="vTa-Ra-e1v" firstAttribute="top" secondItem="wlC-86-JAh" secondAttribute="top" id="dOY-ce-4ur"/>
                                         <constraint firstAttribute="trailing" secondItem="DkW-H1-Xrz" secondAttribute="trailing" id="gv6-0y-8dd"/>
                                         <constraint firstItem="DkW-H1-Xrz" firstAttribute="top" secondItem="wlC-86-JAh" secondAttribute="top" id="kTi-SK-J8L"/>
+                                        <constraint firstAttribute="bottom" secondItem="vTa-Ra-e1v" secondAttribute="bottom" id="weG-Wh-1lm"/>
                                     </constraints>
                                 </collectionViewCellContentView>
                                 <connections>
