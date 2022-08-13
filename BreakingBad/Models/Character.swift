@@ -14,6 +14,7 @@ struct Character: Decodable {
     let status: Status
     let nickname: String
     let portrayed: String
+    let occupation: [String]
 }
 
 enum Status: String, Codable {

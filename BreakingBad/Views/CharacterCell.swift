@@ -14,6 +14,7 @@ class CharacterCell: UICollectionViewCell {
     
     
     func configure(with character: Character) {
+        
         nameLabel.text = character.name
         
         NetworkManager.shared.fetchImage(from: character.img) { [weak self] result in
