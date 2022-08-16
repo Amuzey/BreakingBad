@@ -18,7 +18,7 @@ class CharacterCell: UICollectionViewCell {
         
         nameLabel.text = character.name
         
-        NetworkManager.shared.fetchImage(from: character.img) { [weak self] result in
+        NetworkManager.shared.fetchImage(from: character.img ?? "") { [weak self] result in
             switch result {
                 
             case .success(let imageData):

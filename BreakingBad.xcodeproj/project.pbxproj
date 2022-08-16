@@ -17,6 +17,7 @@
 		8A1F016C28A4DDBF00F94B04 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1F016B28A4DDBE00F94B04 /* NetworkManager.swift */; };
 		8A1F016F28A4DE1300F94B04 /* CharacterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1F016E28A4DE1300F94B04 /* CharacterCell.swift */; };
 		8A43A70428A64784005E099D /* CharacterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A43A70328A64784005E099D /* CharacterViewController.swift */; };
+		8A43A70728AB6D46005E099D /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 8A43A70628AB6D46005E099D /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A43A70728AB6D46005E099D /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,6 +153,9 @@
 			dependencies = (
 			);
 			name = BreakingBad;
+			packageProductDependencies = (
+				8A43A70628AB6D46005E099D /* Alamofire */,
+			);
 			productName = BreakingBad;
 			productReference = 8A1F00FF28A110DC00F94B04 /* BreakingBad.app */;
 			productType = "com.apple.product-type.application";
@@ -179,6 +184,9 @@
 				Base,
 			);
 			mainGroup = 8A1F00F628A110DC00F94B04;
+			packageReferences = (
+				8A43A70528AB6D46005E099D /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 8A1F010028A110DC00F94B04 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -430,6 +438,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8A43A70528AB6D46005E099D /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8A43A70628AB6D46005E099D /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8A43A70528AB6D46005E099D /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8A1F00F728A110DC00F94B04 /* Project object */;
 }

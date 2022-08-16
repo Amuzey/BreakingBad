@@ -23,15 +23,14 @@ class CharacterViewController: UIViewController {
         
         photoImageView.layer.cornerRadius = 15
         nameLabel.text = "Name: \(character?.name ?? "name not found")"
-        statusLabel.text = "Status: \(character?.status.rawValue ?? "status not found")"
+        statusLabel.text = "Status: \(character?.status?.rawValue ?? "status not found")"
         nicknameLabel.text = "Nikcname: \(character?.nickname ?? "nickname not found")"
         portrayedLabel.text = "Actor: \(character?.portrayed ?? "actor not found")"
         
-        NetworkManager.shared.fetchImage(from: character?.img) { [weak self] result in
+        NetworkManager.shared.fetchImage(from: character?.img ?? "") { [weak self] result in
             switch result {
-                
-            case .success(let data):
-                self?.photoImageView.image = UIImage(data: data)
+            case .success(let imageData):
+                self?.photoImageView.image = UIImage(data: imageData)
             case .failure(let error):
                 print(error)
             }
